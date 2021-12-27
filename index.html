@@ -1,0 +1,1248 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4-You</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Header & Navbar -->
+        <header class="header">
+            <div class="container">
+                <div class="content d-flex gap-lg-0 gap-4 align-items-center justify-content-between flex-column flex-lg-row px-3 px-sm-0">
+                    <a class="logo" href="#">
+                        <img class="img-fluid" src="img/logo.png" alt="">
+                    </a>
+                    <div class="input-search position-relative">
+                        <input class="w-100 h-100" type="text" placeholder="إبحث في شاهد فور يو">
+                        <div class="icon-search position-absolute top-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="btn-search position-absolute top-50">
+                            <button class="bg-light">بحث</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="container">
+                <nav class="main-nav">
+                    <div class="container p-0">
+                        <div class="content-nav d-flex align-items-center justify-content-lg-between justify-content-center p-lg-0 py-2">
+                            <div class="main-links">
+                                <div class="icon-toggle d-lg-block d-lg-none">
+                                    <svg style="color: white !important;" xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                    </svg>
+                                </div>
+                                <ul class="links d-flex">
+                                    <li>
+                                        <a href="#">الرئيسية</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">أفلام</a>
+                                        <div class="icon-arrow">
+                                            <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">مسلسلات</a>
+                                        <div class="icon-arrow">
+                                            <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">برامج تلفزيونية</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">عروض مصارعة</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/net.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sign">
+                                <div class="main-btn d-flex gap-2">
+                                    <button class="special position-relative">
+                                        <div class="icon-star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                            </svg>
+                                        </div>
+                                        <a href="#">العضوية المميزة</a>
+                                    </button>
+                                    <button class="sign-in d-flex justify-content-center align-items-center">
+                                        <a href="#">تسجيل الدخول</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- All Movies -->
+        <div class="movies py-4">
+            <div class="container">
+                <div class="row gy-4 row-cols-xl-5">
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/01.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/02.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/03.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/04.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/05.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/06.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/07.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/08.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/09.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/010.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/011.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/012.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/013.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/014.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/015.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/016.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/017.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/018.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/019.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/020.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/021.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/022.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/023.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/024.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/025.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/026.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/027.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/028.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/029.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/030.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/031.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/032.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/033.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/034.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/035.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/036.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/037.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/038.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/039.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/040.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 col-md-4 col-6">
+                        <div class="box">
+                            <img src="img/041.jpg" alt="">
+                            <div class="title">فيلم The Cunjuring 2 مترجم اون لاين</div>
+                            <div class="type">
+                                أفلام أجنبي
+                            </div>
+                            <div class="rate">
+                                <div class="icon-star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                    </svg>
+                                </div>
+                                <span>8.9</span>
+                            </div>
+                            <div class="rate-2">
+                                <span>اكشن</span>
+                                <span>خيال علمي</span>
+                            </div>
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="content">
+                    <span>2009</span>
+                    <span>2010</span>
+                    <span>2011</span>
+                    <span>2012</span>
+                    <span>2013</span>
+                    <span>2014</span>
+                    <span>2015</span>
+                    <span>2016</span>
+                    <span>2017</span>
+                    <span>2018</span>
+                    <span>2019</span>
+                    <span>2020</span>
+                    <span>2021</span>
+                    <span>2022</span>
+                    <span>2023</span>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer-text py-4 text-center">
+            <div class="container">
+                <p>
+                    جميع الحقوق محفوظة شاهد فور يو - تحميل ومشاهدة اون لاين © 2021
+                </p>
+            </div>
+        </footer>
+
+
+        <!-- @_Finished With Mostafa Ahmed & Yousef Mohamed +20 01227370271 -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/javascript.js"></script>
+    </body>
+    </html>
